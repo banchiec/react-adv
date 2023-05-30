@@ -18,11 +18,11 @@ const ShoppingPage = () => {
 					flexWrap: 'wrap',
 				}}
 			></div>
-			<ProductCard product={product}>
+			{/* <ProductCard product={product}>
 				<ProductCard.Image />
 				<ProductCard.Title title="cafe" />
 				<ProductCard.Buttons />
-			</ProductCard>
+			</ProductCard> */}
 			<ProductCard product={product}>
 				<ProductImage />
 				<ProductTitle />
