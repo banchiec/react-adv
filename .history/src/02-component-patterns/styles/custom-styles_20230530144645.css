@@ -1,0 +1,10 @@
+.bg-dark {
+	background-color: rgb(56, 56, 56);
+}
+
+.title-white {
+	color: white;
+}
+.border-image {
+	border: 1px solid red;
+}
