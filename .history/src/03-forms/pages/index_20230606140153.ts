@@ -1,7 +1,6 @@
-export { RegisterFormikPage } from './RegisterFormikPage'
+import { RegisterFormikPage } from './RegisterFormikPage'
 export { RegisterPage } from './RegisterPage'
 export { FormikBasicPage } from './formikBasicPage'
 export { FormikYupPage } from './FormikYupPage'
 export { FormikComponents } from './FormikComponents'
 export { FormikAbstraction } from './FormikAbstraction'
-export { DynamicFormPage } from './DynamicFormPage'

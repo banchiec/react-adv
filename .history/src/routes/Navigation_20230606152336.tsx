@@ -77,6 +77,9 @@ export const Navigation = () => {
 					<Route path="/dynamic-form-page">
 						<DynamicFormPage />
 					</Route>
+					<Route path="/">
+						<h1>Home</h1>
+					</Route>
 				</Switch>
 			</div>
 		</Router>

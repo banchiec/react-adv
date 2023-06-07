@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
+
 import logo from '../logo.svg'
 import {
 	RegisterPage,
@@ -6,8 +7,6 @@ import {
 	FormikAbstraction,
 	FormikYupPage,
 	FormikComponents,
-	RegisterFormikPage,
-	DynamicFormPage,
 } from '../03-forms/pages'
 
 export const Navigation = () => {
@@ -20,11 +19,6 @@ export const Navigation = () => {
 						<li>
 							<NavLink to="/register" activeClassName="nav-active" exact>
 								Register
-							</NavLink>
-						</li>
-						<li>
-							<NavLink to="/register-formik-abstraction" activeClassName="nav-active" exact>
-								Register Formik
 							</NavLink>
 						</li>
 						<li>
@@ -48,13 +42,15 @@ export const Navigation = () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/dynamic-form-page" activeClassName="nav-active" exact>
-								Dynamic Form Page
+							<NavLink to="/formik-abstraction" activeClassName="nav-active" exact>
+								Formik Abstraction
 							</NavLink>
 						</li>
 					</ul>
 				</nav>
 
+				{/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
 				<Switch>
 					<Route path="/register">
 						<RegisterPage />
@@ -70,12 +66,6 @@ export const Navigation = () => {
 					</Route>
 					<Route path="/formik-abstraction">
 						<FormikAbstraction />
-					</Route>
-					<Route path="/register-formik-abstraction">
-						<RegisterFormikPage />
-					</Route>
-					<Route path="/dynamic-form-page">
-						<DynamicFormPage />
 					</Route>
 				</Switch>
 			</div>
